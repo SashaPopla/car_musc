@@ -13,6 +13,10 @@
     font-family: 'Reformag';
 }
 
+body{
+    background-color: #141414; 
+}
+
 h1{
     color: #DB3138;
     font-weight: 700;
@@ -82,4 +86,60 @@ header{
     font-size: 40px;
     font-weight: 500;
     text-align: center;
+}
+
+.block_button{
+    margin: 0 auto; 
+    padding: 16px 0px;
+    width: 130px;
+    text-align: center;
+    height: 61px;
+    border: none;
+    background: #DB3138;
+    cursor: pointer;
+}
+
+.block_button:hover{
+    transition: 1s all;
+    border: 1px solid #DB3138;
+    background: transparent;
+}
+
+.block_button .block_button-link{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header_bottom{
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 107px;
+    display: flex;
+    height: 214px;
+    justify-content: space-between;
+}
+
+.header_bottom-div:first-child, .header_bottom-div:last-child{
+    border: none;
+}
+
+.header_bottom-div{
+    width: 640px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex; 
+    justify-content: center;
+}
+
+.header_bottom-div > .div-info, p{
+    color: var(--white, #FFF);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header_bottom-div .div-info{
+    margin-top: 20px;
+    color: var(--accent, #DB3138);
+    font-size: 24px;
 }
