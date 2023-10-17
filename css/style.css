@@ -78,36 +78,46 @@ header{
 .description{
     margin-bottom: 40px;
     width: 437px;
-    height: 96px;
+    max-height: 96px;
     color: #fff;
 }
 
-.description_text{
+.description .description_text{
     font-size: 40px;
     font-weight: 500;
     text-align: center;
+    line-height: 48px;
 }
 
 .block_button{
     margin: 0 auto; 
-    padding: 16px 0px;
-    width: 130px;
-    text-align: center;
     height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
-    background: #DB3138;
     cursor: pointer;
+    width: 130px;
 }
 
-.block_button:hover{
-    transition: 1s all;
-    border: 1px solid #DB3138;
-    background: transparent;
+.block_button:before {
+    content:'';
+	position: absolute;
+    left: 46.5%;
+	width: 0;
+	height: 61px;
+	background: rgba(219,49,56,0.8);
+	transition: all 2s ease;
 }
 
 .block_button .block_button-link{
+    z-index: 1;
     color: #fff;
     text-transform: uppercase;
+}
+
+.block_button:hover:before{
+    width: 130px;
 }
 
 .header_bottom{
@@ -131,11 +141,13 @@ header{
     justify-content: center;
 }
 
-.header_bottom-div > .div-info, p{
+.header_bottom-subheader{
     color: var(--white, #FFF);
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.9px;
 }
 
 .header_bottom-div .div-info{
