@@ -134,11 +134,14 @@ header{
 }
 
 .header_bottom-div{
+    padding-top: 50px;
     width: 640px;
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.5);
-    display: flex; 
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 .header_bottom-subheader{
@@ -146,12 +149,46 @@ header{
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
-    line-height: 25px;
-    letter-spacing: 0.9px;
+    line-height: 25.2px;
+    letter-spacing: 2px;
 }
 
-.header_bottom-div .div-info{
+.div-info{
     margin-top: 20px;
+}
+
+.div-info p > a, .div-info p{
     color: var(--accent, #DB3138);
+}
+
+.div-info p{
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 20px;
     font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.location{
+    height: 68px;
+    width: 265px;
+}
+
+/* we win */
+
+/* slider */
+.slider{
+    width: 100%;
+    height: 420px;
+}
+
+.slider .container{
+    padding: 0px 181px;
+}
+
+.slider .slider_block{
+    height: 100%;
+    display: flex;
 }
