@@ -5,10 +5,22 @@ window.addEventListener('DOMContentLoaded', ()=>{
         nodes.forEach(function (element, i){
             element.style.background = `url(../img/slider/Rectangle_${++i}.png) center center/cover no-repeat`;
         });
+
+        hideSliderBlock(slideBlockContent);
     }
 
-    const parentsSliderBlock = document.querySelector('.slider_block'),
-        sliderBlockForImg = document.querySelectorAll('.slider_content-img');
+    function hideSliderBlock(nodes){
+        nodes.forEach((element, i) => {
+            if(i > 2)
+                element.style.display = "none";
+        });
+    }
 
+    let parentsSliderBlock = document.querySelector('.slider_block'),
+        slideBlockContent = document.querySelectorAll('.slider_content-rectangle'),
+        sliderBlockForImg = document.querySelectorAll('.slider_content-img');
+   
     getSliderImg(sliderBlockForImg);
+
+    
 });

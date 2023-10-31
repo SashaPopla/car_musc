@@ -178,6 +178,25 @@ header{
 
 /* we win */
 
+.achievements .container{
+    margin: 180px 312px 0px 312px;
+}
+
+.achievements .achievements-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.achievements-description, .achievement-list-block{
+    width: 636px;
+}
+
+.achievements-description{
+    margin-left: 24px;
+}
+
+/* finish we win */
+
 /* slider */
 .slider{
     margin: 180px 0px;
@@ -258,3 +277,5 @@ header{
     letter-spacing: 0.9px;
     text-transform: uppercase;
 }
+
+/* finish slider */
