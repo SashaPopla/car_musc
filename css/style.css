@@ -180,8 +180,10 @@ header{
 
 /* slider */
 .slider{
+    margin: 180px 0px;
     width: 100%;
     height: 420px;
+    color: #FFF;
 }
 
 .slider .container{
@@ -191,4 +193,68 @@ header{
 .slider .slider_block{
     height: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider #prew, #next{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DB3138;
+    background-color: transparent;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.slider .bnt-prew, .bnt-next{
+    font-size: 30px;
+    text-align: center;
+    transform: rotate(45deg);
+}
+
+.slider .slider_content{
+    margin: 0px 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider_content-rectangle{
+    position: relative;
+    margin-left: 24px;
+    width: 416px;
+    height: 420px;
+}
+
+.slider_content-img{
+    width: 416px;
+    height: 350px;
+    background-color: #fff
+}
+
+.slider_content-rectangle .rect{
+    display: block;
+    width: 366px;
+    height: 70px;
+    position: absolute;
+    background-color: #DB3138;
+    left: 6%;
+    top: 75%;
+}
+
+.slider_content-rectangle .rect::before{
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante';
+    position: absolute;
+    width: 286px;
+    top: 30px;
+    left: 36px;
+    text-align: center;
+    color: var(--white, #FFF);
+    font-style: 18px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
 }
